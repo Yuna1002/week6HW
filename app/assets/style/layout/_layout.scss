@@ -1,0 +1,5 @@
+header {
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, $primary 50%, $secondary 50%);
+  border-image-slice: 1;
+}
