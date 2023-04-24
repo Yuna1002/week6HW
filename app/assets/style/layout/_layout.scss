@@ -3,3 +3,12 @@ header {
   border-image: linear-gradient(to right, $primary 50%, $secondary 50%);
   border-image-slice: 1;
 }
+// .border-gradient::after {
+//   content: "";
+//   height: 2px;
+//   width: 100%;
+//   background-image: linear-gradient(to right, $primary 50%, $secondary 50%);
+//   position: fixed;
+//   left: 0;
+//   top: 90px;
+// }

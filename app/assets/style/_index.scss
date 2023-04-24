@@ -37,6 +37,9 @@
   left: 40px;
   transform: translateY(-50%);
 }
+.codeSwiper {
+  overflow-x: hidden;
+}
 .card-img {
   width: 100px;
   height: 100px;
@@ -48,7 +51,7 @@
   @include lg {
     height: 615px;
   }
-
+  //方法ㄧ 直接在背景圖 用漸層效果給透明度
   &-1 {
     background-image: linear-gradient(
         rgba(45, 45, 45, 0.9),
@@ -58,8 +61,8 @@
     &:hover {
       background-image: url("../images/info01.jpg");
     }
+    
   }
-
   &-2 {
     background-image: linear-gradient(
         rgba(45, 45, 45, 0.9),
@@ -98,7 +101,13 @@
     }
   }
 }
-
+//方法二 背景圖上再蓋一層div給bg-color
+// .test-bg {
+//   background-color: rgba(0, 0, 0, 0.766);
+//   &:hover {
+//     background-color: rgba(0, 0, 0, 0);
+//   }
+// }
 .squareRounded {
   display: none;
   width: 32px;
@@ -142,7 +151,7 @@
     height: 733px;
   }
 }
-.feedback-swiper {
+.swiper {
   width: 100%;
   height: auto;
   // height: 429px;
