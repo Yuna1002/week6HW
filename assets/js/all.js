@@ -4,7 +4,7 @@ $(function () {
   // console.log('Hello Bootstrap5');
   var codeSwipe = new Swiper(".codeSwiper", {
     autoplay: {
-      disableOnInteraction: false,
+      // disableOnInteraction: false,
       delay: 0
     },
     speed: 2000,
@@ -21,7 +21,7 @@ $(function () {
     }
   }); // feedback-swiper
 
-  var swiper = new Swiper(".feedback-swiper", {
+  var feedbackSwiper = new Swiper(".feedbackSwiper", {
     // Optional parameters
     effect: "fade",
     fadeEffect: {
@@ -36,6 +36,14 @@ $(function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
     }
+  }); //Datepicker
+
+  var elem = document.querySelector('input[name="datepicker"]');
+  var datepicker = new Datepicker(elem, {
+    language: "zh-TW",
+    buttonClass: "btn",
+    //匹配bootstrap
+    autohide: true
   });
 });
 //# sourceMappingURL=all.js.map
